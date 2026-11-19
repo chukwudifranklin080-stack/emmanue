@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Technova</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial,  sans-serif;
+        }
+
+        nav{
+            background: #0a1931;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 8%;
+        }
+
+        nav .logo{
+            color: #aaff;
+            font-weight: bold;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a{
+            color:#fff;
+            text-decoration: none;
+            font-size: 13px; 
+        }
+
+        .hero{
+            background:#eaf4ff;
+            text-align: center;
+            padding: 90px 10px;
+        }
+
+        .hero h1{
+            font-size: 36px;
+            color: #0a1931;
+            line-height: 1.3;
+        }
+        .hero h1 span{
+            color: #0096ff;
+        }
+        .hero p{
+            font-size: 14px;
+            color: #666;
+            margin: 15px auto;
+            max-width: 550px;
+            line-height: 1.6;
+        }
+        .hero .btns{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+        .btn{
+            padding: 10px 22px;
+            border-radius: 6px;
+            border: none;
+            font-size: 13px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .btn-blue{
+            background: #0096ff;
+            color: #fff;
+        }
+        .btn-white{
+            background: #fff;
+            border: 1px solid #0096ff;
+            color: #0096ff;
+        }
+
+        .service{
+            padding: 70px 8%;
+            text-align: center;
+            background: #fff;
+        }
+        .service h2{
+            font-size: 22px;
+        }
+        .service .sub{
+            font-size: 12px;
+            color: #888;
+            margin: 8px 30px;
+            text-align: center;
+        }
+        .row{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: nowrap;
+        }
+        .card{
+            border: 1px solid #eef2f7;
+            background: #f8f8ff;
+            padding: 22px;
+            border-radius: 8px;
+            width: 32%;
+            text-align: left;
+        }
+        .card h3{
+            font-size: 13px;
+            color: #0096ff;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .card p{
+            font-size: 11.5px;
+            color: #666;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .about{
+            padding: 70px 8%;
+            text-align: center;
+            background: #f9f9f9;
+        }
+        .about h2{
+            font-size: 22px;
+        }
+        .about p{
+            font-size: 12px;
+            color: #777;
+            max-width: 600px;
+            margin: 12px auto;
+            line-height: 1.7;
+        }
+
+        .cta{
+            background: #0a1931;
+            text-align: center;
+            padding: 80PX 8%;
+            color: #fff;
+        }
+        .cta h2{
+            font-size: 24PX;
+        }
+        .cta P{
+            font-size: 12px;
+            color: #8a9bb5;
+            margin: 1opx 0 20px;
+        }
+
+        .footer{
+            background: #051020;
+            color: #666;
+            text-align: center;
+            padding: 15px;
+            font-size: 11px;
+        }
+
+        @media(max-width:768px)
+        {.row{flex-direction: column;}}
+        .card{
+            width: 10
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Technova</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="about">About</a></li>
+            <li><A href="#contact">Contact</A></li>
+
+        </ul>
+    </nav>
+    <div class="service" id="service">
+        <h2>our service</h2>
+        <p class="sub">Technologies solutions designed to help your business grow.</p>
+        <div class="row">
+            <div class="card">
+            <h3>Web Development</h3>
+            <p>We build modern, responsive and professional websites for businesses and organisation</p>
+           </div>
+         <div class="card">
+         <h3>Mobile Apps</h3>
+         <p>We create user-frindly mobile application that solve real business problems.</p>
+         </div>
+         <div class="card">
+            <h3>Digital Marketing</h3>
+          <p>We help business reach more customers through effective Marketing strategies.</p>
+         </div>
+         </div>
+        </div>
+    </div>
+        
+        
+        <div class="about" id="about">
+           <h2>About technova</h2>
+          <p>Technova is a technology company focused on creating innovative digital solutions for individuals, startup and established businesses.</p>
+          <p>Our goal is sample: use technology to make businesses more productive, visible and successful.</p>
+          <div class="cta" id="about">
+            <h2>Ready to Grow your business?</h2>
+            <p>lets build something amazing together.</p>
+            <button class="btn btn-blue">get in touch</button>
+    </div>
+    <footer>&copy; 2026 Technova. All Rights reserved.</footer>
+</body>
+</html>
